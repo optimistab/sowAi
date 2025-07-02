@@ -22,10 +22,16 @@ app.add_middleware(
 
 embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
+# client = weaviate.Client(
+#     url="https://f1le5xfsbapwnseyxohxg.c0.asia-southeast1.gcp.weaviate.cloud",
+#     auth_client_secret=weaviate.AuthApiKey(
+#         api_key=""
+#     ),
+# )
 client = weaviate.Client(
     url="https://f1le5xfsbapwnseyxohxg.c0.asia-southeast1.gcp.weaviate.cloud",
     auth_client_secret=weaviate.AuthApiKey(
-        api_key=""
+        api_key="aUwzL2g0TWhZR3ZnRGcwRF9BTnc0ZloyQUVsdE1Obk0vdmdsai9Ua3UySjVtaGF3S3YwS3BGeEhSOXZ3PV92MjAw"
     ),
 )
 
